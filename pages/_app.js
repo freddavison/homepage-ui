@@ -5,8 +5,7 @@ import {ThemeProvider as NextThemesProvider} from 'next-themes';
 const darkTheme = createTheme({
     type: 'dark',
     theme: {
-        // colors: {background: '#131313'}
-        colors: {background: 'hotpink'}
+        // colors: {primary: '#131313'}
     }
 });
 

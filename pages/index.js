@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import {Text, Grid, Card} from '@nextui-org/react';
+import {Text, Grid} from '@nextui-org/react';
+import {LinkCard} from '../components/link';
 
 export default function Home() {
     return (
@@ -11,34 +12,41 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main className={styles.main}>
-                <Text h1 size={85} css={{lineHeight: '80px'}}>Fred Davison</Text>
-                <Text h2 size={55}
-                     >full-stack developer</Text>
-                <Grid.Container gap={2} justify="center">
-                    <Grid xs={2}>
-                        <Card
-                            isPressable
-                            isHoverable
-                            variant="bordered"
-                            css={{ mw: "400px"}}
-                        >
-                            <Card.Body css={{textAlign: 'center'}}>
-                                <Text size='$3xl'>GitHub</Text>
-                            </Card.Body>
-                        </Card>
+                <Text h1
+                      css={{
+                          lineHeight: '80px',
+                          '@xs': {
+                              fontSize: '85px'
+                          },
+                          '@xl': {
+                              fontSize: '105px'
+                          }
+                      }}
+                >
+                    Fred Davison
+                </Text>
+                <Text h2 css={{
+                    '@xs': {
+                        fontSize: '55px'
+                    },
+                    '@xl': {
+                        fontSize: '75px'
+                    }
+                }}
+                >full-stack developer</Text>
+                <Grid.Container gap={2} justify='center' direction='column'
+                                css={{
+                                    alignItems: 'center',
+                                    '@xs': {
+                                        fd: 'row',
+                                        m: '0 auto',
+                                    }
+                                }}>
+                    <Grid xs={4} sm={2} justify='center'>
+                        {LinkCard('GitHub', 'https://github.com/crochetcode')}
                     </Grid>
-                    <Grid xs={2}>
-                        <Card
-                            isPressable
-                            isHoverable
-                            variant="bordered"
-                            css={{ mw: "400px" }}
-                            color='gradient'
-                        >
-                            <Card.Body>
-                                <Text size='$3xl' css={{textAlign: 'center'}}>LinkedIn</Text>
-                            </Card.Body>
-                        </Card>
+                    <Grid xs={4} sm={2} justify='center'>
+                        {LinkCard('LinkedIn', 'https://www.linkedin.com/in/fdavison1')}
                     </Grid>
                 </Grid.Container>
             </main>
