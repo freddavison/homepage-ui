@@ -27,11 +27,10 @@ export default function Home() {
                                   '@xs': {
                                       fontSize: '85px',
                                       lineHeight: '25px',
-
                                   },
-                                  '@xl': {
-                                      fontSize: '105px'
-                                  }
+                                  '@md': {
+                                      fontSize: '105px',
+                                  },
                               }}
                         >
                             Fred Davison
@@ -42,8 +41,8 @@ export default function Home() {
                             '@xs': {
                                 fontSize: '55px'
                             },
-                            '@xl': {
-                                fontSize: '75px'
+                            '@md': {
+                                fontSize: '65px'
                             }
                         }}
                         >full-stack developer</Text>
@@ -56,15 +55,14 @@ export default function Home() {
                         m: '0 auto',
                     }
                 }}>
-                    <Grid xs={4} sm={2} justify="center">
+                    <Grid xs={4} sm={3} md={2} justify="center">
                         {LinkCard('GitHub', 'https://github.com/crochetcode', faCodeBranch)}
                     </Grid>
-                    <Grid xs={4} sm={2} justify="center">
+                    <Grid xs={4} sm={3} md={2} justify="center">
                         {LinkCard('LinkedIn', 'https://www.linkedin.com/in/fdavison1', faUserTie)}
                     </Grid>
                 </Grid.Container>
             </Container>
         </div>
-    )
-        ;
-}
+    );
+};
