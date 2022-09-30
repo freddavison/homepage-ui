@@ -55,10 +55,10 @@ export default function Home() {
                         m: '0 auto',
                     }
                 }}>
-                    <Grid xs={4} sm={3} md={2} justify="center">
+                    <Grid xs={4} sm={3} md={2} xl={1.5} justify='center'>
                         {LinkCard('GitHub', 'https://github.com/crochetcode', faCodeBranch)}
                     </Grid>
-                    <Grid xs={4} sm={3} md={2} justify="center">
+                    <Grid xs={4} sm={3} md={2} xl={1.5} justify='center'>
                         {LinkCard('LinkedIn', 'https://www.linkedin.com/in/fdavison1', faUserTie)}
                     </Grid>
                 </Grid.Container>
