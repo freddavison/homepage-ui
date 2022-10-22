@@ -12,15 +12,15 @@ export default function Home() {
                 <meta name='description' content='developer website'/>
                 <link rel='icon' href='/favicon.ico'/>
             </Head>
-            <Container direction="column" css={{
+            <Container direction='column' css={{
                 display: 'flex',
                 width: '100vw',
                 height: '100vh',
                 alignItems: 'center',
                 justifyContent: 'center'
             }}>
-                <Grid.Container gap={2} justify="center">
-                    <Grid xs={12} justify="center">
+                <Grid.Container gap={2} justify='center'>
+                    <Grid xs={12} justify='center'>
                         <Text h1
                               css={{
                                   lineHeight: '0',
@@ -33,10 +33,10 @@ export default function Home() {
                                   },
                               }}
                         >
-                            Fred Davison
+                            {'Fred Davison'}
                         </Text>
                     </Grid>
-                    <Grid xs={12} justify="center">
+                    <Grid xs={12} justify='center'>
                         <Text h2 css={{
                             '@xs': {
                                 fontSize: '55px'
@@ -56,7 +56,7 @@ export default function Home() {
                     }
                 }}>
                     <Grid xs={4} sm={3} md={2} xl={1.5} justify='center'>
-                        {LinkCard('GitHub', 'https://github.com/crochetcode', faCodeBranch)}
+                        {LinkCard('GitHub', 'https://github.com/freddavison', faCodeBranch)}
                     </Grid>
                     <Grid xs={4} sm={3} md={2} xl={1.5} justify='center'>
                         {LinkCard('LinkedIn', 'https://www.linkedin.com/in/fdavison1', faUserTie)}
