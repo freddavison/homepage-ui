@@ -17,7 +17,7 @@ function MyApp({Component, pageProps}) {
     return (
         <NextThemesProvider
             theme={darkTheme}
-            attribute="class"
+            attribute='class'
             value={{dark: darkTheme.className}}
         >
             <NextUIProvider>
