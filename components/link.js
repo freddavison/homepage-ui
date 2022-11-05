@@ -1,15 +1,10 @@
 import {Card, Text, Grid} from '@nextui-org/react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {cardCss} from '../styles/link';
 
 export const getLinkCard = (name, link, icon) => (
     <Grid xs={4} sm={3} md={2} xl={1.5} justify='center'>
-        <Card css={{
-            minWidth: '200px',
-            '@xs': {
-                minWidth: '100%',
-            },
-            margin: '0',
-        }}
+        <Card css={cardCss}
               justify='center'
               isPressable
               isHoverable
