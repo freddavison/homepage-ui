@@ -9,7 +9,10 @@ config.autoAddCss = false;
 const darkTheme = createTheme({
     type: 'dark',
     theme: {
-        // colors: {primary: '#131313'}
+        colors: {
+            primary: 'black',
+            accent: 'purple'
+        }
     }
 });
 

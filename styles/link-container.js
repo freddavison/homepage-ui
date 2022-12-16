@@ -3,7 +3,8 @@ export const linkContainerCss = {
     width: '100vw',
     height: '100vh',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    background: '$primary'
 };
 
 export const gridContainerCss = {
